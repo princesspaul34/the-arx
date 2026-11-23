@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us | The Arx Real Estate</title>
+<meta name="description" content="Learn about The Arx Real Estate: our story, mission, vision and the property services we offer to buyers, renters, landlords and investors across Nigeria.">
+<meta name="theme-color" content="#bfe1f7">
+<link rel="canonical" href="https://www.thearx.com/about.html">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="About The Arx Real Estate">
+<meta property="og:description" content="Our story, mission, vision and services.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="crumbs"><a href="index.html">Home</a> / About us</div>
+      <h1>About The Arx</h1>
+      <p>A real estate company built on trust, transparency and a genuine commitment to our clients.</p>
+    </div>
+  </section>
+
+  <!-- Company profile -->
+  <section class="section">
+    <div class="container split">
+      <div class="split-img reveal"><img id="aboutImg" alt="Residential property by The Arx" width="800" height="640"></div>
+      <div class="reveal">
+        <span class="eyebrow">Company profile</span>
+        <h2>Who we are</h2>
+        <p>The Arx is a real estate company that helps people buy, sell and rent residential and commercial property. We combine local market knowledge with a client-first approach to make every transaction clear, safe and rewarding.</p>
+        <p>Our name reflects what we stand for: a strong, dependable foundation. Whether you are buying your first home, renting an apartment, acquiring land or investing in commercial space, we are with you at every step.</p>
+        <h3 style="font-size:1.2rem;margin:24px 0 8px">Company background</h3>
+        <p>We started with a simple observation: finding a good property should not be confusing or stressful. By focusing on verified listings, honest communication and attentive service, we have built a reputation as a company clients are happy to recommend.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">What drives us</span>
+        <h2>Our mission and vision</h2>
+      </div>
+      <div class="mv">
+        <div class="mv-card reveal"><h3>Our Mission</h3><p>To deliver reliable, transparent and professional real estate services that help clients find the right property with confidence, and to make every transaction simple from the first enquiry to handover.</p></div>
+        <div class="mv-card reveal"><h3>Our Vision</h3><p>To be one of the most trusted real estate brands in Nigeria, known for integrity, quality properties and exceptional customer care.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Our values</span>
+        <h2>How we work</h2>
+      </div>
+      <div class="features">
+        <div class="feature reveal"><div class="cat-ico" data-i="shield"></div><h3>Integrity</h3><p>We are honest about every property, price and process, even when it is not the easy answer.</p></div>
+        <div class="feature reveal"><div class="cat-ico" data-i="users"></div><h3>Client focus</h3><p>Your goals shape our advice. We listen first, then recommend what truly fits.</p></div>
+        <div class="feature reveal"><div class="cat-ico" data-i="clipboard"></div><h3>Professionalism</h3><p>Clear documentation, prompt communication and careful attention to detail.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview of services -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Overview of services</span>
+        <h2>What we do for you</h2>
+        <p>A full range of services for buyers, tenants, landlords and investors.</p>
+      </div>
+      <div class="features">
+        <div class="feature reveal"><div class="cat-ico" data-i="tag"></div><h3>Property sales</h3><p>Helping you buy or sell homes, land and commercial property at the right price.</p></div>
+        <div class="feature reveal"><div class="cat-ico" data-i="key"></div><h3>Rentals &amp; leasing</h3><p>Matching tenants with suitable properties and landlords with reliable tenants.</p></div>
+        <div class="feature reveal"><div class="cat-ico" data-i="chart"></div><h3>Investment advisory</h3><p>Guidance on locations and opportunities with strong potential returns.</p></div>
+      </div>
+      <div class="center"><a class="btn btn-dark" href="services.html">See all services</a></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container reveal">
+      <h2>Let's find your perfect property</h2>
+      <p>Get in touch with our team and tell us what you are looking for.</p>
+      <div class="cta-btns">
+        <a class="btn btn-gold" href="contact.html">Contact us</a>
+        <a class="btn btn-light" href="properties.html">Browse properties</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/effects.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var p = ARX.properties[3], img = document.getElementById("aboutImg");
+    if (img) img.src = (p.images && p.images[0]) || ARX_PLACEHOLDER(p, 0);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Citadel Estate Plot Listings | The Arx</title>
+<meta name="description" content="Compare Cluster 1 duplex plots and Cluster 2 bungalow plots at Citadel Estate, Malkohi, Jimeta-Yola.">
+<meta name="theme-color" content="#bfe1f7">
+<link rel="canonical" href="https://www.thearx.com/properties.html">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Citadel Estate Plot Listings | The Arx">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main>
+  <section class="page-hero" style="padding-bottom:84px">
+    <div class="container">
+      <div class="crumbs"><a href="index.html">Home</a> / Properties</div>
+      <h1>Citadel Estate plot listings</h1>
+      <p>Compare duplex and bungalow plots across the two Malkohi clusters.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <form class="filters" id="filterForm" aria-label="Search and filter properties">
+      <div class="field grow">
+        <label for="fq">Search by location</label>
+        <input id="fq" name="q" type="search" placeholder="e.g. Malkohi, Jimeta-Yola">
+      </div>
+      <div class="field">
+        <label for="ft">Property type</label>
+        <select id="ft" name="type">
+          <option value="">All listings</option>
+          <option>Land</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="fs">Listing</label>
+        <select id="fs" name="status">
+          <option value="">All listings</option>
+          <option value="sale">For sale</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="fp">Price range</label>
+        <select id="fp" name="price">
+          <option value="">Any price</option>
+          <option value="0-1000000">Under &#8358;1m</option>
+          <option value="1000000-1500000">&#8358;1m to under &#8358;1.5m</option>
+          <option value="1500000-2000000">&#8358;1.5m to under &#8358;2m</option>
+          <option value="2000000-">&#8358;2m and above</option>
+        </select>
+      </div>
+      <button class="btn btn-gold" type="submit">Search</button>
+    </form>
+
+    <p class="saved-note" id="savedNote" hidden>Showing your saved properties. <a href="properties.html">Show all properties</a></p>
+
+    <div class="list-bar">
+      <p><strong id="count">0</strong> <span id="countLabel">properties</span> found
+        &nbsp;·&nbsp; <button type="button" id="clearFilters" style="background:none;border:0;color:var(--gold-d);cursor:pointer;font-weight:600;text-decoration:underline">Clear filters</button></p>
+      <div class="sort">
+        <label for="sort" style="font-size:.85rem;color:var(--muted)">Sort by</label>
+        <select id="sort">
+          <option value="">Featured</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="grid" id="results" style="padding-bottom:90px" aria-live="polite"></div>
+  </div>
+
+  <section class="cta">
+    <div class="container reveal">
+      <h2>Can't find what you're looking for?</h2>
+      <p>Tell us your requirements and we will search our network for the right match.</p>
+      <div class="cta-btns">
+        <a class="btn btn-gold" href="contact.html">Send a request</a>
+        <a class="btn btn-wa" data-slot="wa" href="#">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/effects.js"></script>
+</body>
+</html>

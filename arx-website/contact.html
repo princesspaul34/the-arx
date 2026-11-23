@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us | The Arx Real Estate</title>
+<meta name="description" content="Contact The Arx Real Estate by phone, email or WhatsApp, or send us a message about buying, renting or investing in property.">
+<meta name="theme-color" content="#bfe1f7">
+<link rel="canonical" href="https://www.thearx.com/contact.html">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Contact The Arx Real Estate">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="crumbs"><a href="index.html">Home</a> / Contact us</div>
+      <h1>Contact us</h1>
+      <p>Have a question or ready to view a property? We would love to hear from you.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <span class="eyebrow">Get in touch</span>
+        <h2 style="font-size:2rem">Let's talk property</h2>
+        <p style="color:var(--muted);margin-top:10px">Reach us on any channel below, or fill in the form and we will respond as soon as possible.</p>
+        <div class="info-list">
+          <div class="info"><div class="cat-ico" data-i="phone"></div><div><h4>Phone</h4><a data-slot="phone" href="#"></a></div></div>
+          <div class="info"><div class="cat-ico" data-i="wa"></div><div><h4>WhatsApp</h4><a data-slot="wa" href="#">Start a chat with us</a></div></div>
+          <div class="info"><div class="cat-ico" data-i="mail"></div><div><h4>Email</h4><a data-slot="email" href="#"></a></div></div>
+          <div class="info"><div class="cat-ico" data-i="pin"></div><div><h4>Address</h4><span data-slot="address"></span></div></div>
+          <div class="info"><div class="cat-ico" data-i="clock"></div><div><h4>Opening hours</h4><span data-slot="hours"></span></div></div>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <h3 style="font-size:1.5rem;margin-bottom:6px">Send us a message</h3>
+        <p style="color:var(--muted);margin-bottom:22px;font-size:.95rem">Tell us what you are looking for.</p>
+        <form id="contactForm" novalidate>
+          <div class="form-grid">
+            <div class="field"><label for="cName">Full name</label><input id="cName" name="name" required autocomplete="name"></div>
+            <div class="field"><label for="cPhone">Phone number</label><input id="cPhone" name="phone" type="tel" required autocomplete="tel"></div>
+            <div class="field full"><label for="cEmail">Email address</label><input id="cEmail" name="email" type="email" autocomplete="email"></div>
+            <div class="field full"><label for="cMsg">Message</label><textarea id="cMsg" name="message" required placeholder="I am interested in..."></textarea></div>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-dark" type="submit">Send by email</button>
+            <button class="btn btn-wa" type="button" id="contactWa">Send via WhatsApp</button>
+          </div>
+          <div class="form-msg" id="contactMsg" role="status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/effects.js"></script>
+</body>
+</html>
